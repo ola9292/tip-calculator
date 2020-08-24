@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <p>How much was your bill?</p>
+    
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" id="amount" class="form-control" aria-label="Amount (to the nearest dollar)"  placeholder="Bill Amount">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+
+        <p>How was your service</p>
+        
+        <select class="custom-select custom-select-lg mb-3" id="service">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="outstanding">30% - Outstanding</option>
+            <option value="good">20% - Good</option>
+            <option value="okay">15% - Okay</option>
+            <option value="bad">10% - Bad</option>
+            <option value="terrible">5% - Terrible</option>
+          </select>
+        <p>How many people are sharing the bill?</p>
+        <!-- <input type="text" id="people" placeholder="Number of People">People <br> -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="people" placeholder="Number of people" aria-label="Recipient's username" >
+            <div class="input-group-append">
+              <!-- <span class="input-group-text" id="basic-addon2">People</span> -->
+            </div>
+          </div>
+        <button type="button" class="btn btn-primary" onclick="calc()">Calculate</button>
+     
+        <div id="tip"></div>
+        <!-- <div class="footer">Oladev Concept</div> -->
+        <span class="badge badge-pill badge-info footer">Oladev Concept</span>
+        </div>
+       
+        <!-- <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div> -->
+    <script src="app.js"></script>
+</body>
+</html>
